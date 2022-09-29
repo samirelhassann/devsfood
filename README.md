@@ -1,10 +1,10 @@
 # Devsfood
 
 A simple food site using ReactJS
-- tailwindcss
+- styled componets
+- react-redux
 - react-router-dom
-- axios
-- infinity scroll
+- react-tooltip
 
 This is a project used for study purposes only • [Samir El Hassan](https://github.com/samirelhassann)
 

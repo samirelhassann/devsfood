@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import searchImage from "../../assets/search.png";
+
 export const Container = styled.div`
   background-color: #136713;
   border-radius: 10px;
@@ -20,7 +22,7 @@ export const SearchInput = styled.input`
   width: ${(props) => (props.active ? "300px" : "0px")};
   height: 50px;
   background-color: #fff;
-  background-image: url("/assets/search.png");
+  background-image: url('${searchImage}');
   background-size: 30px;
   background-repeat: no-repeat;
   background-position: 10px center;

@@ -11,6 +11,8 @@ import {
   ProductButton,
 } from "./styled";
 
+import nextImage from "../../assets/next.png";
+
 export default ({ data, onClick }) => {
   const handleClick = () => {
     onClick(data);
@@ -27,7 +29,7 @@ export default ({ data, onClick }) => {
         <ProductDetails>{data.ingredients}</ProductDetails>
       </ProductInfoArea>
       <ProdutButtonArea>
-        <ProductButton src="/assets/next.png" />
+        <ProductButton src={nextImage} />
       </ProdutButtonArea>
     </Container>
   );

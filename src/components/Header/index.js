@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Container, Logo, SearchInput } from "./styled";
 
+import logoImage from "../../assets/logo.png";
+
 export default ({ search, onSearch }) => {
   const [inputActive, setInputActive] = useState(search !== "");
 
@@ -18,7 +20,7 @@ export default ({ search, onSearch }) => {
 
   return (
     <Container>
-      <Logo src="/assets/logo.png" />
+      <Logo src={logoImage} />
       <SearchInput
         type="text"
         placeholder="Type a product..."

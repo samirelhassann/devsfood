@@ -18,6 +18,12 @@ import {
   ProductQtText,
 } from "./styled";
 
+import cartImage from "../../assets/cart.png";
+import downImage from "../../assets/down.png";
+import minusImage from "../../assets/minus.png";
+import plusImage from "../../assets/plus.png";
+
+
 export default () => {
   const dispatch = useDispatch();
   const products = useSelector((state) => state.cart.products);
@@ -41,11 +47,11 @@ export default () => {
   return (
     <CartArea>
       <CartHeader onClick={handleCartLink}>
-        <CartIcon src="/assets/cart.png" />
+        <CartIcon src={cartImage} />
         <CartText>
           Carrinho <b>{products.length} item(s)</b>
         </CartText>
-        {detailsOpened && products.length > 0 && <CartIcon src="/assets/down.png" />}
+        {detailsOpened && products.length > 0 && <CartIcon src={downImage} />}
       </CartHeader>
       <CartBody show={detailsOpened}>
         <ProductsArea>
@@ -60,14 +66,14 @@ export default () => {
               </ProductInfoArea>
               <ProductQuantityArea>
                 <ProductQtIcon
-                  src="/assets/minus.png"
+                  src={minusImage}
                   onClick={() =>
                     handleChangeQuantity(product.id, product.quantity - 1)
                   }
                 />
                 <ProductQtText>{product.quantity}</ProductQtText>
                 <ProductQtIcon
-                  src="/assets/plus.png"
+                  src={plusImage}
                   onClick={() =>
                     handleChangeQuantity(product.id, product.quantity + 1)
                   }

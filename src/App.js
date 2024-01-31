@@ -1,5 +1,4 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Container, Menu, PageBody } from "./AppStyles";
 import MenuItem from "./components/MenuItem";
@@ -9,18 +8,22 @@ import Tela2Screen from "./pages/Tela2Screen";
 import Cart from "./components/Cart";
 import ReactTooltip from "react-tooltip";
 
+import storeImage from "./assets/store.png";
+import orderImage from "./assets/order.png";
+import profileImage from "./assets/profile.png";
+
 export default () => {
-  const name = useSelector((state) => state.user.name);
+  const basePath = process.env.REACT_APP_BASENAME || '';
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basePath}>
       <Container>
         <Menu>
-          <MenuItem title="Home" icon="/assets/store.png" link="/"></MenuItem>
-          <MenuItem title="Pedidos" icon="/assets/order.png" link="/orders"></MenuItem>
+          <MenuItem title="Home" icon={storeImage} link="/"></MenuItem>
+          <MenuItem title="Pedidos" icon={orderImage} link="/orders"></MenuItem>
           <MenuItem
             title="Meu Perfil"
-            icon="/assets/profile.png"
+            icon={profileImage}
             link="/profile"
           ></MenuItem>
         </Menu>

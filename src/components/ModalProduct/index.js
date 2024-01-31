@@ -17,6 +17,9 @@ import {
   ProductPrice,
 } from "./styled";
 
+import minusImage from "../../assets/minus.png";
+import plusImage from "../../assets/plus.png";
+
 const MAX_QUANTITY = 10;
 const MIN_QUANTITY = 1;
 
@@ -63,11 +66,11 @@ export default ({ data, setStatus }) => {
             <ProductQuantity>
               <ProductQtImage
                 onClick={() => handleChangeQuantity(quantity - 1)}
-                src="/assets/minus.png"
+                src={minusImage}
               />
               <ProductQtText> {quantity}</ProductQtText>
               <ProductQtImage
-                src="/assets/plus.png"
+                src={plusImage}
                 onClick={() => handleChangeQuantity(quantity + 1)}
               />
             </ProductQuantity>

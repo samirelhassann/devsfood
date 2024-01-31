@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import bgImage from "./assets/bg.png";
+
 export const Container = styled.div`
   display: flex;
   height: 100vh;
@@ -17,7 +19,7 @@ export const Menu = styled.div`
 export const PageBody = styled.div`
   display: flex;
   background-color: "#00980D";
-  background-image: url('/assets/bg.png');
+  background-image: url('${bgImage}');
   flex: 1;
   overflow-y: auto;
 `;

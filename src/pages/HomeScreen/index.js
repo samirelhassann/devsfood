@@ -16,6 +16,8 @@ import ProductItem from "../../components/ProductItem";
 import Modal from "../../components/Modal";
 import ModalProduct from "../../components/ModalProduct";
 
+import foodImage from "../../assets/food-and-restaurant.png";
+
 let searchTimer = null;
 
 export default () => {
@@ -87,7 +89,7 @@ export default () => {
               title="All"
               id={0}
               handleOnClick={(id) => handleClick(id)}
-              img="/assets/food-and-restaurant.png"
+              img={foodImage}
               isActive={activeCategory === 0}
             />
             {categories.map((cat, index) => (

@@ -2,6 +2,15 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://samirelhassann.github.io/devsfood",
+  "scripts": {
+    "start": "node setHomepage.js '' && REACT_APP_BASENAME='' react-scripts start",
+    "build": "node setHomepage.js 'https://samirelhassann.github.io/devsfood' && REACT_APP_BASENAME='/devsfood' react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -16,11 +25,8 @@
     "redux-persist": "^6.0.0",
     "styled-components": "^5.1.1"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/devsfood/static/css/main.860a9de9.chunk.css",
+    "main.js": "/devsfood/static/js/main.f6b6000f.chunk.js",
+    "main.js.map": "/devsfood/static/js/main.f6b6000f.chunk.js.map",
+    "runtime-main.js": "/devsfood/static/js/runtime-main.27206ffa.js",
+    "runtime-main.js.map": "/devsfood/static/js/runtime-main.27206ffa.js.map",
+    "static/js/2.cb25b0f6.chunk.js": "/devsfood/static/js/2.cb25b0f6.chunk.js",
+    "static/js/2.cb25b0f6.chunk.js.map": "/devsfood/static/js/2.cb25b0f6.chunk.js.map",
+    "index.html": "/devsfood/index.html",
+    "precache-manifest.8a2b6fba781c162722ae0f4b9f5a2a64.js": "/devsfood/precache-manifest.8a2b6fba781c162722ae0f4b9f5a2a64.js",
+    "service-worker.js": "/devsfood/service-worker.js",
+    "static/css/main.860a9de9.chunk.css.map": "/devsfood/static/css/main.860a9de9.chunk.css.map",
+    "static/js/2.cb25b0f6.chunk.js.LICENSE.txt": "/devsfood/static/js/2.cb25b0f6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.27206ffa.js",
+    "static/js/2.cb25b0f6.chunk.js",
+    "static/css/main.860a9de9.chunk.css",
+    "static/js/main.f6b6000f.chunk.js"
+  ]
+}
